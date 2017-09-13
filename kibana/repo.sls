@@ -1,6 +1,8 @@
 # Setup Elastic Repo
 {% from "kibana/map.jinja" import kibana with context %}
 
+{%- set repo_url = 'https://artifacts.elastic.co/packages/5.x' %}
+
 kibana_repo:
   pkgrepo.managed:
     - humanname: Kibana 
